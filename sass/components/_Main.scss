@@ -1,0 +1,489 @@
+@import url(./Header);
+
+$fafa: #fafafa;
+
+main {
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoryBrowser-article {
+  width: 100%;
+  min-height: 352px;
+  background-color: $fafa;
+  padding: 80px 10vw;
+}
+
+.textMenu {
+  :not(:nth-child(1)) {
+    opacity: 30%;
+  }
+}
+
+.categoryBrowser-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin: 32px 0;
+  flex-wrap: wrap;
+  li {
+    cursor: pointer;
+    // max-width: 160px;
+    min-width: 150px;
+    width: 11vw;
+    height: 15vh;
+    border-radius: 15px;
+    background-color: var(--offwhite);
+    // padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+    img {
+      max-height: 48px;
+    }
+    white-space: nowrap;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+.catalog-article {
+  padding: 56px 10vw;
+}
+
+.catalog-nav-section {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.catalog-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #8b8b8b;
+  cursor: pointer;
+  li {
+    &:first-child {
+      color: #000;
+      border-bottom: solid 2px #000;
+    }
+  }
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.Card {
+  border-radius: 9px;
+  height: 432px;
+  padding: 72px 16px 24px 16px;
+  background-color: var(--cloud);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  p {
+    text-align: center;
+  }
+  input {
+    width: 188px;
+    height: 48px;
+    background-color: var(--darker);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    &:hover {
+      // background-color: lighten($colorhz:var(--darker), 20);
+      background-color: lighten(#000, 20);
+    }
+  }
+  img {
+    cursor: pointer;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+.Like {
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  cursor: pointer;
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.popular-products-article {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:nth-child(2) {
+      background-color: $fafa;
+    }
+    &:nth-child(2) {
+      background-color: #f9f9f9;
+    }
+    &:nth-child(3) {
+      background-color: #eaeaea;
+    }
+    &:nth-child(4) {
+      background-color: #2c2c2c;
+      h2 {
+        color: var(--light);
+      }
+    }
+    div {
+      padding: 0 32px 56px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h2 {
+      font-size: 33px;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+    p {
+      color: #909090;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.discount-article {
+  padding: 80px 10vw;
+  section {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+}
+
+.sales-article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  section {
+    position: absolute;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    font-size: 72px;
+    font-weight: 100;
+    line-height: 72px;
+    span {
+      font-size: 72px;
+      font-weight: 600;
+    }
+  }
+  p {
+    line-height: 32px;
+    color: #787878;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.BannerImage {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  img {
+    width: 100vw;
+  }
+}
+
+.MobileImageMain {
+  display: none;
+}
+
+.iPhone-article {
+  width: 100vw;
+  background-color: #fafafa;
+  // max-width: 536px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7vw 10vw;
+  gap: 48px;
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+}
+
+.iPhone-images {
+  display: flex;
+  gap: 48px;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    img {
+      max-height: 93px;
+      cursor: pointer;
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+}
+
+.info-section {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.color-selection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  div {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      scale: 1.1;
+    }
+    &:nth-child(1) {
+      background-color: #000;
+    }
+    &:nth-child(2) {
+      background-color: #781dbc;
+    }
+    &:nth-child(3) {
+      background-color: #e10000;
+    }
+    &:nth-child(4) {
+      background-color: #e1b000;
+    }
+    &:nth-child(5) {
+      background-color: #e8e8e8;
+    }
+  }
+}
+
+.data-selection {
+  display: flex;
+  gap: 16px;
+  div {
+    width: 122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    cursor: pointer;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+.info-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.info-card {
+  width: 168px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 16px 8px;
+  background-color: #f4f4f4;
+  border-radius: 7px;
+  gap: 8px;
+  div {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    white-space: nowrap;
+    gap: 0;
+    span {
+      font-size: 14px;
+      &:first-of-type {
+        color: #a7a7a7;
+      }
+    }
+  }
+  img {
+    max-width: 24px;
+  }
+}
+
+.description-paragraf {
+  line-height: 24px;
+  color: #6c6c6c;
+}
+
+.input-div {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  input {
+    cursor: pointer;
+    width: 18vw;
+    height: 56px;
+    width: 260px;
+    padding: 16px 56px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    &:nth-child(2) {
+      color: #fff;
+      background-color: #000;
+      &:hover {
+        background-color: lighten($color: #000000, $amount: 20);
+      }
+    }
+  }
+}
+
+select {
+  display: none;
+}
+
+@media (max-width: 1439px) {
+  .popular-products-article {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    max-width: 800px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .catalog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .discount-article {
+    section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .BannerImage {
+    filter: grayscale(50%);
+  }
+  .DesktopImageMain {
+    display: none;
+  }
+  .MobileImageMain {
+    display: block;
+  }
+  .sales-article {
+    section {
+      z-index: 10;
+      text-align: center;
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .popular-products-article {
+    grid-template-columns: 1fr;
+  }
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+  .discount-article {
+    section {
+      grid-template-columns: 1fr;
+    }
+  }
+  .iPhone-images,
+  .info-section {
+    scale: 0.8;
+  }
+  .iPhone-article {
+    gap: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  img {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 520px) {
+  select {
+    display: block;
+  }
+  .catalog-nav {
+    display: none;
+  }
+  .iPhone-images {
+    flex-direction: column-reverse;
+    div {
+      flex-direction: row;
+    }
+  }
+  .data-selection {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1439px) {
+  .iPhone-article {
+    flex-wrap: wrap;
+  }
+  .info-section {
+    padding-top: 0;
+  }
+  .iPhone-images {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .iPhone-article {
+    justify-content: space-evenly;
+  }
+}
